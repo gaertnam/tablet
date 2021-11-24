@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/icons8-heart-with-pulse-48.png">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="skip"><a href="#contactus">Skip to Main Content</a></div>
+    <nav>
+        <ul>
+          <li><a href ="index.html">About</a></li>
+          <li><a href="nurses.html">For Nurses</a></li>
+          <li><a href="patients.html">For Patients</a></li>
+          <li id="current"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <main>
+        <header id="main">
+            <h1>Nurses Know</h1>
+            <h3>For patients that want more.</h3>
+        </header>
+
+        <h2 id="contactus">Contact Us</h2>
+        <p>If you have a suggestion or question, please submit the link below. If you would like a provider added to the site, please include their name and hospital in the Comment section and we will get them added as soon as possible. We appreciate your time and committment to making Nurses Know an even better resource for patients around the country!</p>
+        <div class="contact">
+          <form action="https://formspree.io/f/xrgjzbgw" method="POST">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="">
+          
+              <label for="usertype">User Type (Choose One)</label>
+              <select id="usertype" name="usertype">
+                <option value="nurse">Nurse</option>
+                <option value="patient">Patient</option>
+                <option value="other">Other</option>
+              </select>
+          
+              <label for="comment">Comment</label>
+              <textarea id="comment" name="comment" placeholder="Send Us Your Thoughts" style="height:100px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div> 
+          <div class="contact-photos">
+            <img id="stethoscope-image" src="images/stethoscope.jpeg" alt="Heart Stethoscope"/>
+            <img id="thank-you-image" src="images/thankyounurses.jpeg" alt="Thank You To Our Heroes"/>
+            <img id="blocks-image" src="images/stacked_blokcs.jpeg" alt="Stacked Blocks with Healthcare Images"/>
+          </div>
+    </main>
+    <footer>
+      <p>&copy;Nurses Know<br/>
+        Ashley Gaertner - University of Michigan</p>
+    </footer>
+  </body>
+</html>

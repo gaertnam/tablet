@@ -1,0 +1,387 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #35d3be;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  text-align: center;
+  width: 55%;
+}
+
+
+h2{
+  font-size: 32px;
+  text-shadow: black;
+  line-height: 1.5;
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.grid h2{
+  font-weight: none;
+  padding-top: 0px;
+}
+
+p{
+  padding: 0px 15px 15px 15px;
+  line-height: 1.5;
+  /* border: black, 5px, solid; */
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: flex;
+  padding: 5px 5px 5px 5px;
+  justify-content: center;
+  /* align-items: space-between; */
+  background-color: rgba(255, 255, 255, 0.822);
+}
+
+nav{
+  background-color: rgb(182, 175, 175);
+  padding: 25px 0;
+  text-align: left;
+}
+
+nav a:focus{
+  text-decoration: underline;
+}
+
+nav #current{
+  background-color: lightblue;
+  border: black 1px solid;
+}
+
+#current a{
+  /* color: #35d3be; */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+header {
+  border: grey outset 5px;
+  /* border-radius: 30px; */
+}
+
+header h1{
+  color: black;
+  font-size: 50px;
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+  width: 100%;
+  background-color: lightblue;
+  /* border-top-left-radius: 28px;
+  border-top-right-radius: 28px; */
+}
+
+header h3{
+  color: black;
+  font-size: 20px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  background-color: lightblue;
+  /* border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px; */
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+nav a{
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+  top: 40px;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:focus{
+  top: 5px;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  row-gap: 15px;
+  column-gap: 5px;
+  padding: 0px 15px;
+}
+
+/* .parallax-image{
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  background-image: url("../images/background.jpeg");
+  background-repeat: no-repeat;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1; */
+
+
+/* .about{
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+} */
+
+.concept-image{
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.concept{
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+}
+
+.nurse-image{
+  grid-column: 1 / -1;
+  grid-row: 5 / span 1;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.nurse{
+  grid-column: 1 / -1;
+  grid-row: 4 / span 1;
+}
+
+.patients-image{
+  grid-column: 1 / -1;
+  grid-row: 7 / span 1;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.patients{
+  grid-column: 1 / -1;
+  grid-row: 6 / span 1;
+}
+
+.physicians{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.physicians > img {
+  border: solid 2px black;
+  margin: 10px;
+  width: 400px;
+}
+
+.text-block{
+  background-color: rgba(227, 231, 238, 0.753);
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  align-self: center;
+}
+
+/* .about.text-block{
+  font-family: cursive;
+  border: none;
+  color: black;
+  background-color: inherit;
+  text-align: center;
+  align-self: center;
+} */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: solid black 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(182, 175, 175);
+}
+
+.contact, .rate {
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  border: solid black 2px;
+  background-color: lightblue;
+}
+
+/* .thankyou-image{
+  display: block;
+  padding: 10px 10px;
+  margin: auto;
+  width: 50%;
+} */
+
+.contact-photos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  margin: auto;
+  justify-content: center;
+}
+
+.contact-photos > img {
+  margin: 10px;
+  width: 30%;
+}
+
+@media screen and (min-width: 1024px){
+  nav{
+    padding: 30px 0;
+    text-align: right;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+  }
+
+  nav li{
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .concept-image{
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 1;
+    /* max-height: 100%;
+    overflow:hidden; */
+    max-height: 400px;
+    overflow: hidden;
+  }
+
+  .concept{
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;
+  }
+
+  .nurse-image{
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 1;
+  }
+
+  .nurse{
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+  }
+
+  .patients-image{
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+  }
+
+  .patients{
+    grid-column: 3 / span 3;
+    grid-row: 4 / span 1;
+  }
+
+  h2{
+    margin: 15px 25px 0px 25px;
+    background-color: lightcyan;
+    /* border-top: black dotted 5px;
+    border-left: black dotted 5px;
+    border-right: black dotted 5px; */
+  }
+
+  p{
+    margin: 0px 25px 0px 25px;
+    background-color: lightcyan;
+    text-align: center;
+
+  }
+
+  .grid h2, .grid p{
+    background-color: lightcyan;
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
+  }
+
+  footer p{
+    background-color: black;
+    margin: 0px;
+  }
+
+  div.contact, div.rate{
+    margin: 25px 75px;
+  }
+}
+
+/* @media screen and (min-width: 1600px){
+  body{
+    background-color: purple;
+  }
+} */
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+
+  .skip a{
+    -webkit-transition: initial;
+    transition: initial;
+  }
+
+  header{
+    background-attachment: initial;
+  }
+}
